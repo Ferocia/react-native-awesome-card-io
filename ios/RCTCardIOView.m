@@ -37,7 +37,6 @@ RCT_EXPORT_VIEW_PROPERTY(detectionMode, CardIODetectionMode);
      body:@{
             @"cardType": cardType,
             @"cardNumber": cardInfo.cardNumber ?: [NSNull null],
-            @"cardImage": [UIImagePNGRepresentation(cardInfo.cardImage) base64EncodedStringWithOptions:kNilOptions],
             @"redactedCardNumber": cardInfo.redactedCardNumber ?: [NSNull null],
             @"expiryMonth": @(cardInfo.expiryMonth) ?: [NSNull null],
             @"expiryYear": @(cardInfo.expiryYear) ?: [NSNull null],
@@ -50,4 +49,4 @@ RCT_EXPORT_VIEW_PROPERTY(detectionMode, CardIODetectionMode);
 }
 
 @end
-
+  
